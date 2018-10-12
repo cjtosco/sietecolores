@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block stylesheet %}
+    {{ super() }}
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/jgallery.min.css?v=1.6.4" />
+{% endblock %}
+
+{% block content %}
+
+	<div id="gallery">
+	    <a href="images/gallery.jpg"><img src="images/gallery.jpg" alt="Photo 1" /></a>
+	    <a href="images/gallery2.jpg"><img src="images/gallery2.jpg" alt="Photo 2" /></a>
+	    <a href="images/gallery3.jpg"><img src="images/gallery3.jpg" alt="Photo 3" /></a>
+	</div>
+
+{% endblock %}
+{% block js %}
+	{{ super() }}
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jgallery.min.js?v=1.6.4"></script>
+	<script>
+		$( function(){
+		    $( "#gallery" ).jGallery( {
+		        // "transition":"moveToLeft_moveFromRight",
+		        // "transitionCols":"1",
+		        // "transitionRows":"1",
+		        // "thumbnailsPosition":"bottom",
+		        // "thumbType":"image",
+		        // "backgroundColor":"#ffffff",
+		        // "textColor":"#000000",
+		        // "mode":"standard"
+		    } );
+		} );
+	</script>
+{% endblock %}
