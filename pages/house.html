@@ -8,10 +8,15 @@
 
 {% block content %}
 
-	<div id="gallery">
-	    <a href="images/gallery.jpg"><img src="images/gallery.jpg" alt="Photo 1" /></a>
-	    <a href="images/gallery2.jpg"><img src="images/gallery2.jpg" alt="Photo 2" /></a>
-	    <a href="images/gallery3.jpg"><img src="images/gallery3.jpg" alt="Photo 3" /></a>
+	<div class="row pt-5">
+		<div class="col-12 pt-5">
+			<div id="gallery">
+			    <a href="images/gallery.jpg"><img src="images/gallery.jpg" alt="Photo 1" /></a>
+			    <a href="images/gallery2.jpg"><img src="images/gallery2.jpg" alt="Photo 2" /></a>
+			    <a href="images/gallery3.jpg"><img src="images/gallery3.jpg" alt="Photo 3" /></a>
+			</div>
+		</div>
+
 	</div>
 
 {% endblock %}
@@ -22,14 +27,14 @@
 	<script>
 		$( function(){
 		    $( "#gallery" ).jGallery( {
-		        // "transition":"moveToLeft_moveFromRight",
-		        // "transitionCols":"1",
-		        // "transitionRows":"1",
-		        // "thumbnailsPosition":"bottom",
-		        // "thumbType":"image",
-		        // "backgroundColor":"#ffffff",
-		        // "textColor":"#000000",
-		        // "mode":"standard"
+		        "transition":"moveToLeft_moveFromRight",
+		        "transitionCols":"1",
+		        "transitionRows":"1",
+		        "thumbnailsPosition":"bottom",
+		        "thumbType":"image",
+		        "backgroundColor":"#ffffff",
+		        "textColor":"#000000",
+		        "mode":"standard"
 		    } );
 		} );
 	</script>
