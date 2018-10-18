@@ -116,3 +116,8 @@
     font-size: 1em;
     font-weight: 0;
 }
+
+.clear{
+	clear: both;
+	height: 130px;
+}
