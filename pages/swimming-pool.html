@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block stylesheet %}
+    {{ super() }}
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/jgallery.min.css?v=1.6.4" />
+{% endblock %}
+
+{% block content %}
+    <div class="row pt-3">
+        <div class="col-12 col-sm-12">
+            <div class="border-bottom">
+                <div class="pb-2 mt-4 mb-2 pt-4">
+                    <h3>Pileta</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="row pt-2">
+		<div class="col-12">
+			<div id="gallery">
+			    <a href="images/pileta/pileta1.jpg"><img src="images/pileta/pileta1.jpg" alt="Photo 1" /></a>
+			    <a href="images/pileta/pileta2.jpg"><img src="images/pileta/pileta2.jpg" alt="Photo 2" /></a>
+			    <a href="images/pileta/pileta3.jpg"><img src="images/pileta/pileta3.jpg" alt="Photo 3" /></a>
+			    <a href="images/pileta/pileta4.jpg"><img src="images/pileta/pileta4.jpg" alt="Photo 4" /></a>
+			    <a href="images/pileta/pileta5.jpg"><img src="images/pileta/pileta5.jpg" alt="Photo 5" /></a>
+			    <a href="images/pileta/pileta6.jpg"><img src="images/pileta/pileta6.jpg" alt="Photo 6" /></a>
+			    <a href="images/pileta/pileta7.jpg"><img src="images/pileta/pileta7.jpg" alt="Photo 7" /></a>
+			</div>
+		</div>
+
+	</div>
+
+{% endblock %}
+{% block js %}
+	{{ super() }}
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jgallery.min.js?v=1.6.4"></script>
+	<script>
+		$( function(){
+		    $( "#gallery" ).jGallery( {
+		        "transition":"moveToLeft_moveFromRight",
+		        "transitionCols":"1",
+		        "transitionRows":"1",
+		        "thumbnailsPosition":"bottom",
+		        "thumbType":"image",
+		        "backgroundColor":"#ffffff",
+		        "textColor":"#000000",
+		        "mode":"standard"
+		    } );
+		} );
+	</script>
+{% endblock %}
