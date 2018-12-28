@@ -50,15 +50,32 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px){
+	.homepage-info h1 .line1 {
+		font-size: 1.2em
+	}
+	.homepage-info h1 .line2 {
+		font-size: 2.5em;
+		left:2.3em
+	}
+	.homepage-info h1 .line3 {
+		font-size: 1.2em
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
 	.homepage-info h1 .line1 {
 		font-size: 1.5em
 	}
 	.homepage-info h1 .line2 {
-		font-size: 3.5em
+		font-size: 3em;
+		left:2.3em
 	}
 	.homepage-info h1 .line3 {
 		font-size: 1.5em
+	}
+	h5 {
+		font-size: 1em
 	}
 }
 
