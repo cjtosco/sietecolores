@@ -8,11 +8,6 @@
 	font-weight: 800;
 }
 
-.logo-portada{
-	height: 180;
-	width: 240;
-}
-
 .homepage-info {
     position: relative;
     overflow: hidden;
@@ -25,7 +20,7 @@
 .homepage-info h1 .line1{
 	font-size:2em;
 	letter-spacing:-2px;
-	margin-bottom:.2em;
+	margin-bottom:.3em;
 }
 
 .homepage-info h1 .line2{
@@ -49,17 +44,17 @@
 	  	margin-top: 2em
 	}
 	.homepage-info h1 .line1 {
-		font-size: 0.8em
+		font-size: 0.6em
 	}
 	.homepage-info h1 .line2 {
-		font-size: 2.1em;
-		left:1.8em
+		font-size: 1.9em;
+		left:1.4em
 	}
 	.homepage-info h1 .line3 {
-		font-size: 0.8em
+		font-size: 0.6em
 	}	
 	h5 {
-		font-size: 0.9em
+		font-size: 0.7em
 	}
 	.footer-responsive {
 		font-size: 0.7rem
@@ -67,6 +62,10 @@
 }
 
 @media (min-width: 576px) and (max-width: 665px){
+	.text-responsive {
+	  	font-size: 3.0rem;
+	  	margin-top: 2em
+	}
 	.homepage-info h1 .line1 {
 		font-size: 1em
 	}
@@ -124,7 +123,7 @@
 .homepage-submenu{
 	line-height:1.8;
 	text-align:left;
-	font-size:1.0em;
+	font-size:0.8em;
 	top:-4px;
 	right:0
 }
